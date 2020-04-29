@@ -14,7 +14,7 @@
     <span class="badge badge-secondary">
       You are already tracking
       <% if !current_user.under_stock_limit? %>
-        6 stocks
+        60 stocks
       <% end %>
       <% if current_user.stock_already_tracked?(@stock.ticker) %>
         this stock
