@@ -27,9 +27,6 @@ class User < ApplicationRecord
           "Anonymous"
         end
 
-
-
-
         def self.search(param)
           param.strip!
           to_send_back = (first_name_matches(param) + last_name_matches(param) + email_matches(param)).uniq
